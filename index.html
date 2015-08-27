@@ -1,37 +1,83 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>About Me</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-    </head>
-    <body>
-        <main>
-            <header>
-                <div class="content header-content">
-                    <img class="udacity-logo" src="http://cameronwp.github.io/cpcom/static/udacity_logo.svg" alt="Udacity Logo">
-                    <h1>Front-End Apprentice</h1>
-                </div>
-            </header>
-            <section class="hero">
-                <div class="content">
-                    <img class="my-picture" src="images/my_picture.jpg" alt="This is a picture of me">
-                    <p class="iama">My name is...</p>
-                    <p class="my-name my-info">Michael Stanley</p>
-                    <p class="iama">I want to be...</p>
-                    <p class="my-info">a front-end master</p>
-                </div>
-            </section>
-            <section class="about-me content">
-                <p class="iama">I live in...</p>
-                <p class="my-info">Orlando, FL</p>
-                <p class="iama">My favorite way to work is...</p>
-                <p class="my-info">coffee in one hand and good music on</p>
-                <p class="iama">In my free time, I like to...</p>
-                <p class="my-info">do competitive archery</p>
-            </section>
-        </main>
-    </body>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>P1: Build a Portfolio Site</title>
+  <!-- Not needed for codepen
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/styles.css">-->
+  <!-- Latest compiled and minified CSS
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6"><img class="title-logo" src="http://i.imgur.com/VHI37d8.jpg" alt="Udacity Logo"></div>
+      <div class="col-md-6 text-uppercase text-right">
+        <h1 class="title-super text-thin">Michael Stanley</h1>
+        <h4>Front-end Ninja</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <img class="img-responsive" src="http://i.imgur.com/LIuDK6k.jpg" alt="My Dogs">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="text-muted">Featured Work</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <a href="http://codepen.io/michaelstanley002/full/jPRQYr/" target="_blank"><img class="img-responsive" src="http://i.imgur.com/CTxuot5.png" alt="Project 0"></a>
+        <h3 class="text-uppercase text-center"><a href="http://codepen.io/michaelstanley002/full/jPRQYr/" target="_blank">Project 0</a></h3>
+        <p class="text-center"><a href="http://codepen.io/michaelstanley002/full/jPRQYr/" target="_blank">http://codepen.io/michaelstanley002/full/jPRQYr/</a></p>
+      </div>
+      <div class="col-md-4">
+        <a href="http://zenautodetailing.com/" target="_blank"><img class="img-responsive" src="http://i.imgur.com/l6pcZX1.png" alt="Zen Auto Detailing"></a>
+        <h3 class="text-uppercase text-center"><a href="http://zenautodetailing.com/" target="_blank">Zen Auto Detailing</a></h3>
+        <p class="text-center"><a href="http://zenautodetailing.com/" target="_blank">http://zenautodetailing.com/</a></p>
+      </div>
+      <div class="col-md-4">
+        <!-- Trigger modal -->
+        <a data-toggle="modal" data-target="#myModal">
+          <img src="http://i.imgur.com/KoKtRaV.png" class="img-responsive" alt="Archery Photo">
+        </a>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title" id="myModalLabel">Archery Things</h3>
+              </div>
+              <div class="modal-body">
+                <p>This is my most recent hobby. It's a really zen-like sport and calms me down. If you are ever in Orlando, FL and have considered trying out archery, contact me and I'll get you hooked :)</p>
+                <h4>Some Recent Shooting</h4>
+                <p><img class="img-responsive" src="http://i.imgur.com/7aFKgl6.jpg" alt="Good Arrow Score"></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="text-uppercase text-center"><a href="http://www.villagesarchery.com/results-docs/2015/Results%20June%2014,%202015.pdf" target="_blank">Archery</a></h3>
+        <p class="text-center"><a href="http://www.villagesarchery.com/results-docs/2015/Results%20June%2014,%202015.pdf" target="_blank">http://www.villagesarchery.com/results.htm</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
